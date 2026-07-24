@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Lucas ISR | Excelência em Desinsetização</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100..900&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-container": "#5e6572",
+                        "error-container": "#ffdad6",
+                        "primary-container": "#2d2d2d",
+                        "outline": "#747878",
+                        "on-secondary-fixed-variant": "#404754",
+                        "primary-fixed-dim": "#c8c6c6",
+                        "primary": "#181919",
+                        "inverse-on-surface": "#f4f0ef",
+                        "on-tertiary-container": "#979491",
+                        "surface-container-highest": "#e5e2e1",
+                        "on-error": "#ffffff",
+                        "surface": "#fdf8f8",
+                        "on-tertiary": "#ffffff",
+                        "inverse-primary": "#c8c6c6",
+                        "surface-container-lowest": "#ffffff",
+                        "inverse-surface": "#313030",
+                        "secondary": "#585f6c",
+                        "surface-variant": "#e5e2e1",
+                        "on-primary-fixed-variant": "#474747",
+                        "on-tertiary-fixed-variant": "#484644",
+                        "on-primary": "#ffffff",
+                        "on-surface-variant": "#444748",
+                        "on-primary-fixed": "#1b1c1c",
+                        "secondary-fixed": "#dce2f3",
+                        "surface-container-low": "#f7f3f2",
+                        "on-error-container": "#93000a",
+                        "surface-container": "#f1edec",
+                        "tertiary-container": "#2e2d2b",
+                        "surface-dim": "#ddd9d8",
+                        "surface-tint": "#5f5e5e",
+                        "background": "#fdf8f8",
+                        "on-secondary-fixed": "#151c27",
+                        "tertiary": "#191917",
+                        "outline-variant": "#c4c7c7",
+                        "surface-bright": "#fdf8f8",
+                        "on-primary-container": "#959494",
+                        "secondary-fixed-dim": "#c0c7d6",
+                        "secondary-container": "#dce2f3",
+                        "tertiary-fixed-dim": "#c9c6c3",
+                        "on-tertiary-fixed": "#1c1b1a",
+                        "surface-container-high": "#ebe7e7",
+                        "primary-fixed": "#e4e2e1",
+                        "on-background": "#1c1b1b",
+                        "on-surface": "#1c1b1b",
+                        "error": "#ba1a1a",
+                        "on-secondary": "#ffffff",
+                        "tertiary-fixed": "#e6e2de"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "section-gap-desktop": "160px",
+                        "offset-block": "32px",
+                        "section-gap-mobile": "80px",
+                        "container-max-width": "1280px",
+                        "base": "8px"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["Plus Jakarta Sans"],
+                        "label-caps": ["Plus Jakarta Sans"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "body-md": ["Plus Jakarta Sans"],
+                        "display-lg-mobile": ["Plus Jakarta Sans"],
+                        "headline-md": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "display-lg-mobile": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                        "headline-md": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        body {
+            background-color: #fdf8f8;
+            color: #1c1b1b;
+            -webkit-font-smoothing: antialiased;
+        }
+        .reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .offset-image-container::after {
+            content: '';
+            position: absolute;
+            top: 24px;
+            left: 24px;
+            width: 100%;
+            height: 100%;
+            border: 1px solid #E5E7EB;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body class="font-body-md">
+<!-- Header Navigation -->
+<header class="bg-surface sticky top-0 z-50 border-b border-outline-variant w-full">
+<nav class="flex justify-between items-center px-6 md:px-20 h-20 w-full max-w-[1280px] mx-auto">
+<div class="font-headline-md text-headline-md tracking-tighter text-primary">Lucas ISR</div>
+<div class="hidden md:flex items-center gap-10">
+<a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">O Método</a>
+<a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Serviços</a>
+<a class="font-label-caps text-label-caps uppercase text-primary font-bold border-b-2 border-primary pb-1" href="#">Agendar</a>
+</div>
+<a class="bg-primary-container text-on-primary px-8 py-3 font-label-caps text-label-caps uppercase hover:bg-primary transition-all active:scale-95" href="https://wa.me/5567996990463" target="_blank">
+                Solicitar Consultoria
+            </a>
+</nav>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative w-full overflow-hidden bg-surface">
+<div class="flex flex-col md:flex-row min-h-[870px] w-full max-w-[1280px] mx-auto items-stretch">
+<!-- Text Content -->
+<div class="flex-1 px-6 md:px-20 py-20 flex flex-col justify-center reveal">
+<span class="font-label-caps text-label-caps uppercase text-outline mb-6 block">Referência em Desinsetização</span>
+<h1 class="font-display-lg text-display-lg mb-10 max-w-xl">Excelência e Proteção para sua Família</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-12 max-w-md">Desinsetização de alto padrão com atendimento personalizado e qualidade comprovada para ambientes exclusivos.</p>
+<div class="flex gap-4">
+<a class="bg-primary text-on-primary px-10 py-5 font-label-caps text-label-caps uppercase hover:bg-black transition-all" href="https://wa.me/5567996990463">
+                            Falar no WhatsApp
+                        </a>
+</div>
+</div>
+<!-- Image -->
+<div class="flex-1 relative min-h-[500px] md:min-h-0 reveal" style="transition-delay: 200ms;">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="A cinematic, high-key photograph of a professional pest control technician in a clean, minimalist charcoal grey uniform. He stands confidently in a luxurious, modern architectural space with large windows and clean white walls. The lighting is soft and natural, emphasizing a sense of professional excellence and clinical precision. The aesthetic is premium, editorial, and sophisticated, avoiding all cliches of the industry." src="https://lh3.googleusercontent.com/aida-public/AB6AXuACmcjHzs6aLTM7sF3X3Zxkxpj-3TzZm1UITYIX6aa80mstXvflEBqdAzPn63zn1vQYpWG69-Buc8QKb-haqm-YaCJGWdzkGTcIebkenz0icJ6FHjmiAsMcy0VNBGY7v8vEhK1N3xVeSuaSePz65TxilyrhMDyfDbYDmkZsxpH5Q5V6EqeaYB7QTmHMiaFzdY1ScultiWOjN2KHPpGt2Us_cU_Ua1bCPEr8OBTnfRf7JYAs3rbZ1XpAoMUhsUidH-Z1ovLo9sBYlBvj"/>
+</div>
+</div>
+</section>
+<!-- Service Approach - Airy Vertical Flow -->
+<section class="py-section-gap-desktop bg-surface">
+<div class="max-w-[1280px] mx-auto px-6 md:px-20">
+<!-- Section 01: Qualidade Comprovada -->
+<div class="flex flex-col md:flex-row items-center gap-20 mb-section-gap-desktop">
+<div class="w-full md:w-1/2 offset-image-container relative reveal">
+<div class="aspect-[4/5] w-full relative overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A macro photograph showing a precision inspection tool resting on a pristine, high-end marble surface. The focus is sharp on the metallic texture of the equipment, reflecting a bright, clinical light-mode environment. The surrounding space is minimalist and out of focus, emphasizing professional scrutiny and technical mastery. The color palette is composed of whites, light greys, and brushed steel." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4UGf3hN7fSDQiP1vvHh7qbZGsFovDQ8-WHv1a_VykP14gyYqKH1hjicy1Hcec0Vn8w4ZBJvfBzhHTOm_M6W8MA7jnJJrGkIgKD1DVd_Z3h_g1FcB_pdI8ibsDxhpK9knc_dfmp8Is5mPzTkxTUBtbDccNWKerfMZ0xj0SLKnp9dFoWoOLVCwDbC7d0DF277DEBwHgDIUKNEjRDSf6rk7sQphhq8RzI83fvgflRw2nD-4ztR4NgYqZvgeApbnqDICabV_B6qp4AUzi"/>
+</div>
+</div>
+<div class="w-full md:w-1/2 reveal" style="transition-delay: 300ms;">
+<span class="font-label-caps text-label-caps text-outline mb-4 block">PROCESS 01</span>
+<h2 class="font-headline-md text-headline-md mb-10">Qualidade Comprovada em Cada Detalhe</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8">Nossa abordagem técnica transcende a aplicação convencional. Utilizamos protocolos de inspeção rigorosos e ativos de última geração que garantem a sanitização total do ambiente sem comprometer a integridade dos materiais ou a saúde dos ocupantes.</p>
+<ul class="space-y-4">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<span class="font-body-md text-body-md">Monitoramento técnico contínuo</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<span class="font-body-md text-body-md">Insumos de grau farmacêutico</span>
+</li>
+</ul>
+</div>
+</div>
+<!-- Section 02: Atendimento Personalizado -->
+<div class="flex flex-col md:flex-row-reverse items-center gap-20">
+<div class="w-full md:w-1/2 offset-image-container relative reveal">
+<div class="aspect-[4/5] w-full relative overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A focused close-up of a technician's hands wearing clean, dark protective gloves, carefully handling a sophisticated glass container in a bright, modern laboratory-style setting. The background is a blurred high-end residential interior. The lighting is crisp and cool, highlighting the meticulous care and personalized nature of the service. High-contrast minimalism style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuALcGTCIsF3KXuK-SFOuZxwqzmrY6_otKHyFX2JhnEy72wTBpo5ggC9JORRcFA1AqQEE7o8Ac2HeKs5aQ4lzR-D8BjBta8DIiB8XL7h4k7CSlR9NXO2us267KX-ACJWGRZxpYasu1L3LV_JkTTzjDV-ulNmRUpB-mzQCIZBoWMnyQ9nCEMowwzzotzHNEjQTDTKMq2KkU3bFuUUsWg6Iw4cdaMX5MGaILt3PG5k5iZATCvRwpjHVeurKHR_d_4yg9Zw03m-DQN9AMVP"/>
+</div>
+</div>
+<div class="w-full md:w-1/2 reveal" style="transition-delay: 300ms;">
+<span class="font-label-caps text-label-caps text-outline mb-4 block">PROCESS 02</span>
+<h2 class="font-headline-md text-headline-md mb-10">Atendimento que Respeita seu Espaço</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8">Cada residência ou empresa possui dinâmicas únicas. Desenhamos um plano de ação personalizado, agendado de acordo com sua conveniência e executado com máxima discrição. Nosso objetivo é restaurar a tranquilidade do seu lar de forma invisível e eficaz.</p>
+<div class="p-8 border border-outline-variant bg-surface-container-low reveal">
+<p class="font-label-caps text-label-caps uppercase mb-2">Certificação ISR</p>
+<p class="font-body-md italic text-on-surface-variant">"O selo de garantia que assegura o mais alto padrão de higiene e segurança para sua família e patrimônio."</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Visual Context - Large Detail Image -->
+<section class="reveal">
+<div class="w-full h-[716px] relative overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="An expansive wide shot of a luxury minimalist living room with floor-to-ceiling windows, perfectly clean and flooded with afternoon sunlight. A professional technician is visible in the distance, barely noticeable, performing a discreet inspection near a corner. The image conveys 'Sanctity Restored'—an environment that is quiet, organized, and perfectly sanitized. Colors are dominated by warm neutrals and high-key light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpLWWlv_OPdeNw8W9rhGU2jEFr5fGz96erEonUtMOWk_vr1wnjBOUho6NwZq782YqjBoMsGFOJXEi74ANSFd-9WF6yEuTmo95KRlJt9aKIC3WZij6E7yrfoRJol-sTeVX2UvL_KT2bjqtfVXhnZ0hf-8CH5-bOXc9zhlQpamq251QXt63Po0MhPN9PdR7ihl9saf_lgFajcjNKZcguvXGEPLFhQK2Vh1D38SjzPA9LZLmNdhnBkmYz5C9a7XqDd4RgIe6iTG-vVzBj"/>
+<div class="absolute inset-0 bg-primary/10 flex items-center justify-center">
+<div class="text-center px-6">
+<h3 class="font-display-lg text-display-lg text-white mb-4 drop-shadow-md">Proteção Invisível</h3>
+<p class="font-body-lg text-body-lg text-white max-w-lg mx-auto drop-shadow-md">A paz de um ambiente livre de invasores, preservando a sofisticação do seu estilo de vida.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA / Conversion -->
+<section class="py-section-gap-desktop bg-primary text-on-primary">
+<div class="max-w-[1280px] mx-auto px-6 md:px-20 text-center reveal">
+<span class="font-label-caps text-label-caps uppercase text-primary-fixed-dim mb-8 block">Inicie sua Consultoria</span>
+<h2 class="font-display-lg text-display-lg mb-10">Sua tranquilidade começa com um diálogo.</h2>
+<p class="font-body-lg text-body-lg text-on-primary-container max-w-2xl mx-auto mb-16">Estamos prontos para realizar uma avaliação técnica detalhada do seu imóvel. Entre em contato diretamente pelo nosso canal exclusivo de atendimento.</p>
+<div class="flex flex-col items-center gap-6">
+<a class="bg-white text-primary px-12 py-6 font-headline-md text-headline-md hover:bg-surface-container-highest transition-all flex items-center gap-4" href="https://wa.me/5567996990463">
+<span class="material-symbols-outlined text-3xl">chat_bubble</span>
+                        (67) 99699-0463
+                    </a>
+<p class="font-label-caps text-label-caps text-on-primary-container">CAMPO GRANDE - MS E REGIÃO</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary-container border-t border-primary">
+<div class="flex flex-col md:flex-row justify-between items-center py-20 px-6 md:px-20 w-full max-w-[1280px] mx-auto gap-base">
+<div class="text-left">
+<div class="font-headline-md text-headline-md text-on-primary mb-2">Lucas ISR</div>
+<p class="font-body-md text-body-md text-on-primary-container opacity-70">© 2024 Lucas ISR. Excelência em Desinsetização de Alto Padrão.</p>
+</div>
+<div class="flex gap-8 items-center mt-10 md:mt-0">
+<a class="font-body-md text-body-md text-on-primary-container opacity-70 hover:opacity-100 transition-opacity" href="#">Privacidade</a>
+<a class="font-body-md text-body-md text-on-primary-container opacity-70 hover:opacity-100 transition-opacity" href="#">Termos</a>
+<a class="font-body-md text-body-md text-on-primary-container opacity-70 hover:opacity-100 transition-opacity" href="#">Instagram</a>
+<a class="font-body-md text-body-md text-on-primary font-bold hover:opacity-100 transition-opacity" href="https://wa.me/5567996990463">WhatsApp Business</a>
+</div>
+</div>
+</footer>
+<script>
+        // Simple Intersection Observer for reveal animations
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+        // Smooth header shadow on scroll
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('shadow-sm');
+            } else {
+                header.classList.remove('shadow-sm');
+            }
+        });
+    </script>
+</body></html>
